@@ -25,9 +25,7 @@ Users should be able to:
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/55553756/229647214-deb6bef7-9ee7-42f6-9184-0f977a32685e.png">
 
 ### Links
-
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Netlify](https://beamish-tanuki-fc2357.netlify.app/)
 
 ## My process
 
