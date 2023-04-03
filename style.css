@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+:root {
+	--color-dark-cyan: hsl(158, 36%, 37%);
+	--color-cream: hsl(30, 38%, 92%);
+	--color-very-dark-blue: hsl(212, 21%, 14%);
+	--color-dark-grayish-blue: hsl(228, 12%, 48%);
+	--color-white: hsl(0, 0%, 100%);
+}
+
+html {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.sans-serif {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.serif {
+	font-family: 'Fraunces', serif;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	background-color: var(--color-cream);
+}
+
+.product-preview {
+	display: grid;
+	place-items: center;
+	max-width: 21rem;
+	background-color: var(--color-white);
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+@media (min-width: 600px) {
+	.product-preview {
+		grid-template-columns: 1fr 1fr;
+		min-width: 46rem;
+	}
+}
+
+.picture {
+	content: url('./images/image-product-mobile.jpg');
+	min-height: 100%;
+}
+
+@media (min-width: 600px) {
+	.picture {
+		content: url('./images/image-product-desktop.jpg');
+	}
+}
+
+.uppercase-spaced {
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+.shopping-info {
+	display: grid;
+	padding: 2rem;
+	gap: 2rem;
+}
+
+@media (max-width: 600px) {
+	.shopping-info {
+		gap: 1rem;
+	}
+}
+
+.shopping-info h1 {
+	color: var(--color-very-dark-blue);
+	line-height: 1;
+	font-size: 2.5rem;
+}
+
+.shopping-info p {
+	color: var(--color-dark-grayish-blue);
+	line-height: 1.7;
+}
+
+.flex-group {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.current-price {
+	font-size: 2.5rem;
+	color: var(--color-dark-cyan);
+}
+
+.original-price {
+	color: var(--color-dark-grayish-blue);
+	text-decoration: line-through;
+}
+
+.shopping-info button {
+	color: var(--color-white);
+	font-size: 1rem;
+	background-color: var(--color-dark-cyan);
+	border: 0;
+	border-radius: 0.4rem;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	min-width: 100%;
+	padding: 1.1rem 2rem;
+}
